@@ -28,9 +28,9 @@ function handleGetMovies(req, res) {
       movie.genre.toLowerCase().includes(req.query.genre.toLowerCase())
     );
   }
-  if (req.query.county) {
+  if (req.query.country) {
     response = response.filter((movie) =>
-      movie.county.toLowerCase().includes(req.query.county.toLowerCase())
+      movie.country.toLowerCase().includes(req.query.country.toLowerCase())
     );
   }
   if (req.query.avg_vote) {
